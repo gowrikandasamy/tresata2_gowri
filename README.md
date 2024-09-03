@@ -1,5 +1,4 @@
-**# Deploy EKS cluster using terraform,leveraging Jenkins as integration tool
-
+Deploy EKS cluster using terraform,leveraging Jenkins as integration tool
 
 1. Create and secure the Keypair 
 2. Create a Jenkins Server with all the dependencies, libraries and packagies needed.
