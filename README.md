@@ -1,12 +1,11 @@
-# jenkins-pipeline-deploy-to-eks
-# Project Name: End to end deployment of Applications to Kubernetes using a Jenkins CI/CD Pipeline
-# Steps for the project
+**# Deploy EKS cluster using terraform,leveraging Jenkins as integration tool
 
-## 1. Create a Keypair that matches your keypair
-## 2. Create a Jenkins Server with all the dependencies, libraries and packagies needed.
-## 2. Once completed, access the Jenkins server and Set it up
-## 4. Run the jenkins-pipeline-deploy-to-eks to create Kubernetes Cluster, create deployments and Services
-## 5. Test that the application is running 
-## 6. Destroy infrastructure
+
+1. Create and secure the Keypair 
+2. Create a Jenkins Server with all the dependencies, libraries and packagies needed.
+3. Setup and configure Jenkin server with admin id, AWS access and secret id and pipe line
+4. Run jenkins-pipeline-deploy-to-eks to create EKS cluster, create deployments and services
+5. Test that the application is running 
+6. Destroy infrastructure**
 
 
