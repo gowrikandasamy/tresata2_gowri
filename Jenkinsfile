@@ -38,5 +38,15 @@ pipeline {
                 }
             }
         }
+        stage("Deploy to HPA-deployment") {
+            steps {
+                script {
+                    dir('HPA') {
+                        sh "aws eks update-kubeconfig --name demo-eks-cluster"
+                        sh "kubectl apply -f .
+                    }
+                }
+            }
+        }
     }
 }
