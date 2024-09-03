@@ -28,5 +28,15 @@ pipeline {
                 }
             }
         }
+        stage("Deploy to metrics-server") {
+            steps {
+                script {
+                    dir('metrics-server') {
+                        sh "aws eks update-kubeconfig --name demo-eks-cluster"
+                        sh "kubectl apply -f ."
+                    }
+                }
+            }
+        }
     }
 }
