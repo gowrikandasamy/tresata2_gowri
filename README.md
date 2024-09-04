@@ -8,6 +8,5 @@ Deploy EKS cluster using terraform,leveraging Jenkins as integration tool
   -  HPA - Horizonal pod auto scaling
   -  ELK - Elasticsearch, logstash, Kibana for logging and metrics
   -  Metrics-server promrthrus & grafana - Monitoring and observability
-
-
+6. Followed with teraform destroy loop, since this is the demo deployment.
 
