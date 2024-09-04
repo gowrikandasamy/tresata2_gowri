@@ -48,7 +48,6 @@ pipeline {
                 }
             }
         }
-
         stage("Deploy to ELK-deployment") {
             steps {
                 script {
@@ -59,5 +58,15 @@ pipeline {
                 }
             }
         } 
+        stages {
+        stage("Create EKS cluster") {
+            steps {
+                script {
+                    dir('terraform') {
+                        sh "terraform destroy"
+                    }
+                }
+            }
+        }
     }
 }
